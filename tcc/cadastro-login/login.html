@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+   
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="#" type="image/x-icon">
+<title>Login | OnEat ™</title>
+<link rel="stylesheet" href="css/stylelogin.css" />
+</head>
+<body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <a href="../"><img src="../img/logo.png" alt="" /></a>
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Bem-vindo(a)!</h1>
+            <p>
+              Faça login ou cadastre-se para começar a fazer as suas compras.
+            </p>
+          </div>
+          <form action="../BD/login.php" method="get">
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <div class="label-wrapper flex">
+                <label for="senha"> Senha </label>
+                <a href="recuperar1.html"> Esqueceu a senha? </a>
+              </div>
+
+              <input
+                type="password"
+                id="senha1"
+                name="senha1"
+                placeholder="Digite sua senha"
+              />
+
+              <img
+                onclick="togglePassword()"
+                class="eye"
+                src="./assets/eye-off.svg"
+                alt=""
+              />
+              <img
+                onclick="togglePassword()"
+                class="eye hide"
+                src="./assets/eye.svg"
+                alt=""
+              />
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div class="create-account">
+              Ainda não tem uma conta?
+              <a href="../cadastro/index.html"> Cadastre-se </a>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img src="../img/svg/login.svg" alt="" />
+    </div>
+
+    <!-- JS -->
+    <script>
+      function togglePassword() {
+        document
+          .querySelectorAll(".eye")
+          .forEach((eye) => eye.classList.toggle("hide"))
+
+        const type =
+          senha.getAttribute("type") == "password" ? "text" : "password"
+
+        senha.setAttribute("type", type)
+      }
+    </script>
+</body>
+</html>

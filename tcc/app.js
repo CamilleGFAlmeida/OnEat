@@ -98,18 +98,44 @@ function fadeOut() {
 window.onload = fadeOut;
 
 // cookies 
-
-var msgCookies = document.getElementById("cookies-msg");
+var msgCookies = document.getElementById("cookies-msg")
 
 function aceito() {
-  localStorage.lgpd = "sim"; 
-  msgCookies.classList.remove('mostrar'); 
+  localStorage.lgpd = "sim"
+  msgCookies.classList.remove("mostrar")
 }
 
-if(localStorage.lgpd == "sim") {
-  msgCookies.classList.remove('mostrar');
-} else{
-  msgCookies.classList.add('mostrar');
+if (localStorage.lgpd == "sim") {
+  msgCookies.classList.remove("mostrar")
+} else {
+  msgCookies.classList.add("mostrar")
+}
+
+// POP-UP 
+// Obtém o popup
+var popup = document.getElementById("contactPopup");
+
+// Obtém o botão que abre o popup
+var btn = document.querySelector(".btn-contact");
+
+// Obtém o <span> que fecha o popup
+var span = document.getElementsByClassName("close")[0];
+
+// Quando o usuário clicar no botão, abre o popup 
+btn.onclick = function() {
+    popup.style.display = "block";
+}
+
+// Quando o usuário clicar no <span> (x), fecha o popup
+span.onclick = function() {
+    popup.style.display = "none";
+}
+
+// Quando o usuário clicar fora do popup, fecha o popup
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
 }
 
 AOS.init(); 

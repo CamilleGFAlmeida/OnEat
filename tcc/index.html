@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery de Comida e Sistema para Restaurantes - OnEat</title>
+    <title>OnEat</title>
 
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,12 @@
     <!-- AOS -ANIMATE ON SCROLL -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png" type="image/x-icon">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -45,7 +51,7 @@
                 <button onclick="aceito()">Aceito</button>
             </div>
         </div>
-    </div>
+    </div> 
     
     <header>
         <!-- navbar -->
@@ -58,10 +64,10 @@
 
         <ul class="links-container">
             <li class="link-items"><a href="#hero-section" class="links">Inicio</a></li>
-            <li class="link-items"><a href="#restaurants-section" class="links">Pedidos</a></li> 
             <li class="link-items"><a href="#" class="links">Sobre</a></li>
             <li class="link-items"><a href="#faq-section" class="links">FAQ</a></li>
             <li class="link-items"><a href="#download-app-section" class="links">Aplicativo</a></li>
+             <li class="link-items"><a href="#contact" class="links">Contato</a></li>
         </ul>
 
         <!-- pesquisa -->
@@ -72,8 +78,10 @@
                 <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
-            <!-- carrinho -->
-            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./cadastro-login/login.html" class="cart"><i class="fa-solid fa-right-to-bracket"></i></a>
+
+             <!-- carrinho -->
+            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>            
 
             <div class="nav-toggler">
                 <span></span>
@@ -143,6 +151,49 @@
 
 </header>
 
+<!-- features section -->
+    <section class = "feature" id = "feature">
+      <div class = "container">
+        <div class = "row">
+          <div class = "feature-left wow animate__animated animate__fadeInUp animate__slow">
+            <img src = "./img/svg/login-main.svg" alt = "">
+          </div>
+          <div class = "feature-right wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "title titleanimation">
+              <h2 class="title-text-about-us">Como criar sua conta?</h2>
+              <p class = "text">Pequenos passos para que você consiga entender como você pode criar facilmente sua conta e começar a realizar suas compras na OnEat.</p>
+            </div>
+
+            <div class = "feature-item">
+              <span><i class = "fa-solid fa-mobile"></i></span><i class=""></i>
+              <div>
+                <h3 class="boxes-text">Download e Conta</h3>
+                <p class = "text">Faça o download do nosso aplicativo ou acesse o site desktop para fazer o seu cadastro e crie seu perfil no botão "Entrar".</p>
+              </div>
+            </div>
+
+            <div class = "feature-item">
+              <span><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h3>Catálogo e Preferências</h3>
+                <p class = "text">Após o cadastro, explore o nosso catálogo e escolha o restaurante que deseja, você também pode personalizar sua experiência
+                e ganhar seu cupons exclusivos.</p>
+              </div>
+            </div>
+
+            <div class = "feature-item">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>
+              <div>
+                <h3>Pagamento e Entrega</h3>
+                <p class = "text">Assim que a compra for concluída com o método de pagamento de sua preferência, enviaremos o link para o rastreamento e as principais informações do seu pedido.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+    <!-- end of features section -->
+
     <!-- restaurantes -->
     <section id="restaurants-section" data-aos="fade-up" data-aos-delay="0">
 
@@ -188,8 +239,13 @@
                 <p class="section-info">Mais de 1000 opções de escolhas no cardápio. Faça já o pedido que combina com o seu mood.</p>
 
                 <button class="btn">Pedir Agora <span>&#10230;</span></button>
+                
             </div>
 
+        </div>
+
+        <div class="restaurant-filter">
+            <span class="filter">Ver todos</span>
         </div>
   
     <div class="restaurants-container" data-aos="fade-up" data-aos-delay="0">
@@ -506,7 +562,7 @@
        <!-- separação -->
             <div class="section-detail">
                 <span class="section-highlight">Faça o download do nosso app!</span>
-                <p class="section-title">Faça pedidos pelo app já!</p>
+                <p class="section-title">Faça pedidos pelo app!</p>
                 <p class="section-info">Obtenha recursos extras no aplicativo, incluindo rastreamento de pedidos, gerenciamento de contas e muito mais.</p>
 
                <div class="download-btn-group">
@@ -535,6 +591,32 @@
 
     </div>
 
+</div>
+
+ <!-- PARTNERS -->
+     <!-- section 4 -->
+    <section class = "sec-4 py-3" id="contact">
+        <h1 class = "boxes-text-modify-title-partners">Ficou com alguma dúvida? Entre em contato conosco</h1>
+        <div class = "container">
+            <p class = "text-faq">Nosso programa de parcerias está repleto de vantagens para as empresas que querem nos ajudar a alavancar o projeto de uma forma mais prática e simples para conseguirmos uma visibilidade cada vez maior, para saber mais sobre ele é só entrar em contato conosco pelo nosso email para se tornar um dos nossos apoiadores ou caso tenha alguma dúvida!
+            </p>
+            <div class = "btn-group">
+                <!--<button type = "button" class = "btn btn-dark">About us</button> --> 
+                <a id="partners_link" href="#contact"><button type = "button" class = "btn-contact space">Contato</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- end of section 4 -->
+    <!-- end of PARTNERS -->
+
+    <!-- Popup -->
+<div id="contactPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Entre em Contato!</h2>
+        <p>Entre em contato pelo nosso email para mais informações e dúvidas. <br>Responderemos o mais rápido possível</p>
+        <p>Email: <a href="mailto:oneat@gmail.com">oneat@gmail.com</a></p>
+    </div>
 </div>
 
     <section id="footer">
