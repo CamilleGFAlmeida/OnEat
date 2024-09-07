@@ -1,2 +1,2 @@
 # OnEat
- Projeto de Conclusão de Curso 
+Sistema de Gerenciamento para Restaurantes
