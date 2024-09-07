@@ -7,30 +7,119 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #EAF2F5; /* #f4f4f9 */
     color: #333;
-    padding: 20px;
+    line-height: 1.6;
+}
+
+i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+i:hover {
+    color: #008080;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Top Menu */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+   /* border-radius: 12px; */ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* margin-bottom: 15px; */
+    position: relative;
+    z-index: 100;
+    animation: fadeIn 1.5s ease-in-out;
+    width: 100%; 
+}
+
+.menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo {
+    height: 50px; /* 50px */
+}
+
+/* ADD */
+.menu-item {
+    height: 35px; 
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-right p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.icon-cart img {
+    height: 50px;
+    cursor: pointer;
+
+    /* height: 30px;
+    cursor: pointer;
+    */
+}
+
+/* Banner Image */
+.banner-image {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #EAF2F5; /* #fff */
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     margin-bottom: 30px;
     animation: fadeIn 1s ease-in-out;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
+
+    /* width: 50px;
+    height: 50px; 
+    */
 }
 
 .restaurant-info h1 {
-    font-size: 28px;
+    font-size: 34px; /*  font-size: 28px; */
     color: #222;
     font-weight: 600;
 }
@@ -58,11 +147,11 @@ header {
 }
 
 nav {
-    background-color: #00695C;
+    background-color: #fff; /* #00695C */
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -83,7 +172,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #004D40;
+    background-color: #e6e6e670; 
+    /*  background-color: #004D40; */
 }
 
 section.menu {
@@ -99,6 +189,7 @@ section.menu {
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
     animation: fadeInUp 2s ease-in-out;
+    border: 1.6px solid #007676; /* add */ 
 }
 
 .category h2 {
@@ -121,13 +212,13 @@ section.menu {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
     animation: fadeInUp 2.5s ease-in-out;
 }
 
 .item img {
-    width: 120px;
-    height: 120px;
+   /* width: 120px; */
+    height: 155px; /* 120px */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -214,6 +305,10 @@ section.menu {
         align-items: flex-start;
     }
 
+    a:-webkit-any-link {
+        font-size: 12px; 
+    }
+
     .delivery-info {
         text-align: left;
     }
@@ -221,4 +316,77 @@ section.menu {
     nav ul li a {
         font-size: 14px;
     }
+
+    /* ADD */
+    .menu-logo {
+        height: 35px;
+    }
+
+    .menu-item {
+        height: 26px;
+    }
+
+    .icon-cart img {
+        height: 35px; 
+    }
+
+    .banner-image img {
+        height: 200px;
+    }
+
+    .logo img {
+        height: 70px;
+        width: 70px; 
+    }
+
+    .restaurant-info h1 {
+        font-size: 24px;
+    }
+
+    .rating span {
+        font-size: 14px;
+    }
+
+    .rating p { 
+        font-size: 12px;
+    }
+
+    .delivery-info p {
+        font-size: 14px;
+    }
+
+    .delivery-info .open {
+        font-size: 12px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .item img {
+        height: 100px;
+    }
+
+    .item h3 {
+        font-size: 16px;
+    }
+
+    .item p {   
+        font-size: 12px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+    .category h2 {
+        font-size: 20px;
+    }
+
+   /* .item:hover 
+   {
+        transform: none;
+        box-shadow: none;
+    } */
+
 }
