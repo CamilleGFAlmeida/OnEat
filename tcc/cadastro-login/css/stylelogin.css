@@ -50,8 +50,8 @@ img {
 }
 
 header img {
-  width: 28rem; /* 16rem */ /*50%*/
-  height: 17rem; /* 5.4rem */ /* 12rem */ 
+  width: 24rem; /* 16rem */ /*50%*/
+  height: 15rem; /* 5.4rem */ /* 12rem */ 
 }
 
 #page > div {
@@ -71,16 +71,18 @@ h1 {
   font-size: 3.6rem;
   line-height: 5.5rem;
   color: #1e293b;
+  font-weight: bold;
 }
 
-h1 + p {
+p {
+  font-size: 1.4rem; 
   color: #475569;
-  margin-top: 1.6rem;
-  font-weight: 600; /* ADD */ 
+  margin-top: 1rem; /* 1.6rem; */
+  font-weight: 500; /* ADD */ 
 }
 
 form {
-  margin-top: 4rem;
+  margin-top: 1.6rem; /* 4rem */
 }
 
 .input-wrapper {
