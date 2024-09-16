@@ -1,0 +1,392 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAF2F5; /* #f4f4f9 */
+    color: #333;
+    line-height: 1.6;
+}
+
+i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+i:hover {
+    color: #008080;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Top Menu */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+   /* border-radius: 12px; */ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* margin-bottom: 15px; */
+    position: relative;
+    z-index: 100;
+    animation: fadeIn 1.5s ease-in-out;
+    width: 100%; 
+}
+
+.menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo {
+    height: 50px; /* 50px */
+}
+
+/* ADD */
+.menu-item {
+    height: 35px; 
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-right p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.icon-cart img {
+    height: 50px;
+    cursor: pointer;
+
+    /* height: 30px;
+    cursor: pointer;
+    */
+}
+
+/* Banner Image */
+.banner-image {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAF2F5; /* #fff */
+    padding: 20px;
+    border-radius: 12px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+
+    /* width: 50px;
+    height: 50px; 
+    */
+}
+
+.restaurant-info h1 {
+    font-size: 34px; /*  font-size: 28px; */
+    color: #222;
+    font-weight: 600;
+}
+
+.restaurant-info .rating {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ffcc00;
+}
+
+.delivery-info {
+    text-align: right;
+}
+
+.delivery-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+.delivery-info .open {
+    color: #4CAF50;
+    font-weight: 700;
+}
+
+nav {
+    background-color: #fff; /* #00695C */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e6e6e670; 
+    /*  background-color: #004D40; */
+}
+
+section.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.category {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 2s ease-in-out;
+    border: 1.6px solid #007676; /* add */ 
+}
+
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #00796B;
+    font-weight: 600;
+}
+
+.items {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    width: calc(25% - 30px);
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+.item img {
+   /* width: 120px; */
+    height: 155px; /* 120px */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 20px;
+    color: #00796B;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .items {
+        justify-content: space-between;
+    }
+
+    .item {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    a:-webkit-any-link {
+        font-size: 12px; 
+    }
+
+    .delivery-info {
+        text-align: left;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* ADD */
+    .menu-logo {
+        height: 35px;
+    }
+
+    .menu-item {
+        height: 26px;
+    }
+
+    .icon-cart img {
+        height: 35px; 
+    }
+
+    .banner-image img {
+        height: 200px;
+    }
+
+    .logo img {
+        height: 70px;
+        width: 70px; 
+    }
+
+    .restaurant-info h1 {
+        font-size: 24px;
+    }
+
+    .rating span {
+        font-size: 14px;
+    }
+
+    .rating p { 
+        font-size: 12px;
+    }
+
+    .delivery-info p {
+        font-size: 14px;
+    }
+
+    .delivery-info .open {
+        font-size: 12px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .item img {
+        height: 100px;
+    }
+
+    .item h3 {
+        font-size: 16px;
+    }
+
+    .item p {   
+        font-size: 12px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+    .category h2 {
+        font-size: 20px;
+    }
+
+   /* .item:hover 
+   {
+        transform: none;
+        box-shadow: none;
+    } */
+
+}
