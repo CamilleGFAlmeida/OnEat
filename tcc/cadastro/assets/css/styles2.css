@@ -170,8 +170,9 @@ input:valid ~ span{
     transform: translateX(4px) translateY(-7px);
     font-size: 0.80em;
     padding: 0 6px;
-    color: var(--cyny-green);
-    background-color: var(--dusky-green);
+    color: var(--dusky-green);
+    margin-top: 30px; 
+    font-weight: 600;
     color: white;
     border-radius: 2px;
 }

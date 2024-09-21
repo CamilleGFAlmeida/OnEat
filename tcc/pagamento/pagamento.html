@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - OnEat</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../img/logo.png" alt="OnEat Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Aplicativo</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" class="search-box" placeholder="Pesquisar...">
+             <a href="#" class="cart"><i class="fa-solid fa-right-to-bracket"></i></a>
+
+             <!-- carrinho -->
+            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>            
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-section-left">
+            <h2>Selecione a forma de pagamento</h2>
+            <div class="payment-options">
+                <button class="payment-btn">Débito/Crédito</button>
+                <button class="payment-btn">Transferência Bancária</button>
+                <button class="payment-btn active">Pix</button>
+            </div>
+            <div class="pix-payment">
+                <label for="pix-key">Digite a Chave Pix</label>
+                <input type="text" id="pix-key">
+                <p>Escaneie o QR Code</p>
+                <img src="../../img/pagamento/qr-code.png" alt="QR Code Pix">
+            </div>
+        </section>
+
+        <section class="order-summary-right">
+            <h2 id="order-summary-right-title">Resumo de Valores</h2>
+            <div class="order-item">
+                <img src="../../img/pagamento/burguer.png" alt="Hamburguer">
+                <div>
+                    <p>3x Especial 1</p>
+                    <p class="item-price">R$ 12,90</p>
+                </div>
+            </div>
+            <div class="summary-details">
+                <p>SUBTOTAL: <span>R$ 38,70</span></p>
+                <p>TAXA DE ENTREGA: <span>R$ 5,00</span></p>
+                <p>TOTAL: <span>R$ 43,70</span></p>
+            </div>
+            <div class="cpf-note">
+                <p>CPF na nota <span>(Opcional)</span></p>
+                <button>Adicionar</button>
+            </div>
+             
+            <div class="discount-code">
+                <label for="discount-code">Insira o Cupom de Desconto</label>
+                <input type="text" id="discount-code" placeholder="Digite o código">
+            </div>
+            <button class="submit-order">Realizar Pedido</button>
+        </section>
+    </main>
+</body>
+</html>
