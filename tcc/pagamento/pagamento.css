@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f0f2f5;
+    /*background-color: #f0f2f5;*/
 }
 
 header {
@@ -47,11 +47,11 @@ nav ul li a {
 }
 
 .search-cart input {
-    padding: 5px;
+    padding: 8px;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     padding-left: 10px;
-    background: transparent; 
+    background-color: #dddddd70; 
 }
 
 /*.search-cart button {
@@ -118,6 +118,7 @@ main {
 h2 {
     margin-top: 4%; 
     margin-bottom: 4%;
+    color: #333;
 }
 
 #order-summary-right-title {
